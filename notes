@@ -1,0 +1,121 @@
+ecommerce-app/
+│
+├── client/                              # React frontend for customers
+│   ├── public/
+│   │   └── favicon.ico
+│   ├── src/
+│   │   ├── assets/                      # logos, images, etc.
+│   │   ├── components/
+│   │   │   ├── layout/                  # Navbar, Footer
+│   │   │   ├── home/                    # Hero, CategoryGrid, Offers
+│   │   │   ├── product/                 # ProductCard, ProductDetail
+│   │   │   ├── dashboard/               # Profile, Orders, TrackOrder
+│   │   │   └── ui/                      # Buttons, Modals, Loaders
+│   │   ├── context/                     # AuthContext, CartContext
+│   │   ├── hooks/                       # useAuth, useCart
+│   │   ├── pages/                       # Home, Login, Signup, Checkout
+│   │   ├── routes/                      # React Router setup
+│   │   ├── services/                    # axios API calls
+│   │   │   ├── api.js
+│   │   │   ├── authService.js
+│   │   │   ├── productService.js
+│   │   │   ├── orderService.js
+│   │   │   └── paymentService.js
+│   │   ├── styles/
+│   │   ├── App.jsx
+│   │   └── main.jsx
+│   ├── vite.config.js
+│   ├── package.json
+│   └── .env
+│
+├── admin/                               # React admin dashboard
+│   ├── public/
+│   ├── src/
+│   │   ├── components/
+│   │   │   ├── layout/                  # Sidebar, Navbar
+│   │   │   ├── tables/                  # Seller/User/Product tables
+│   │   │   └── ui/                      # Buttons, Modals
+│   │   ├── pages/
+│   │   │   ├── Dashboard.jsx
+│   │   │   ├── Sellers.jsx
+│   │   │   ├── Products.jsx
+│   │   │   ├── Orders.jsx
+│   │   │   └── Customers.jsx
+│   │   ├── routes/
+│   │   │   └── AdminRoutes.jsx
+│   │   ├── services/
+│   │   │   ├── api.js
+│   │   │   └── adminService.js
+│   │   ├── App.jsx
+│   │   └── main.jsx
+│   ├── vite.config.js
+│   ├── package.json
+│   └── .env
+│
+├── server/                              # Node.js + Express backend
+│   ├── src/
+│   │   ├── config/
+│   │   │   ├── db.js                    # MongoDB connection
+│   │   │   ├── cloudinary.js            # Cloudinary setup
+│   │   │   ├── nodemailer.js            # Nodemailer setup
+│   │   │   ├── razorpay.js              # Razorpay setup
+│   │   │   └── env.js                   # dotenv setup
+│   │   ├── models/
+│   │   │   ├── User.model.js
+│   │   │   ├── Product.model.js
+│   │   │   ├── Order.model.js
+│   │   │   └── Payment.model.js
+│   │   ├── middleware/
+│   │   │   ├── authMiddleware.js
+│   │   │   ├── roleMiddleware.js
+│   │   │   └── errorHandler.js
+│   │   ├── controllers/
+│   │   │   ├── authController.js
+│   │   │   ├── productController.js
+│   │   │   ├── orderController.js
+│   │   │   ├── paymentController.js
+│   │   │   └── sellerController.js
+│   │   ├── routes/
+│   │   │   ├── authRoutes.js
+│   │   │   ├── productRoutes.js
+│   │   │   ├── orderRoutes.js
+│   │   │   ├── paymentRoutes.js
+│   │   │   └── sellerRoutes.js
+│   │   ├── services/
+│   │   │   ├── emailService.js          # Nodemailer email functions
+│   │   │   ├── fileUploadService.js     # Cloudinary upload
+│   │   │   └── razorpayService.js       # Razorpay logic
+│   │   ├── utils/
+│   │   │   ├── generateOTP.js
+│   │   │   ├── hashPassword.js
+│   │   │   └── validateEmail.js
+│   │   ├── app.js                       # Express setup
+│   │   └── server.js                    # App entry point
+│   ├── .env
+│   └── package.json
+│
+└── README.md
+ client src  
+ src/
+├── assets/
+├── components/
+│   ├── layout/
+│   │   ├── Navbar.jsx
+│   │   └── Footer.jsx
+│   ├── home/
+│   │   ├── Hero.jsx
+│   │   └── CategoryGrid.jsx
+│   └── ui/
+│       └── Button.jsx
+├── pages/
+│   ├── Home.jsx
+│   ├── Login.jsx
+│   ├── Signup.jsx
+│   └── Checkout.jsx
+├── services/
+│   ├── api.js
+│   └── authService.js
+├── routes/
+│   └── AppRoutes.jsx
+├── App.jsx
+└── main.jsx
